@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Image Gallery || CodeAlpha</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="lightbox">
+        <div class="wrapper">
+            <header>
+                <div class="photographer">
+                    <i class="uil uil-camera"></i>
+                    <span></span>
+                </div>
+                <div class="btns">
+                    <i class="uil uil-import"></i>
+                    <i class="uil uil-times"></i>
+                </div>
+            </header>
+            <div class="preview_img">
+                <div class="img"><img src="" alt="Image"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <section class="search">
+        <img src="Assets/search-img.jpg" alt="Search-img">
+        <div class="content">
+            <h1>Image Gallery</h1>
+            <p>Search and download any wonderful images within a few seconds</p>
+            <div class="search_box">
+                <i class="uil uil-search" id="Search_ID"></i>
+                <input class="search_Input" type="text" placeholder="Search Images">
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <ul class="images">
+            <!-- Data Come from api -->
+        </ul>
+        <button class="load_more_btn">Load More</button>
+    </section>
+    
+
+    <script src="./Script/index.js" defer></script>
+</body>
+</html>

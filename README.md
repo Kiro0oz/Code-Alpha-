@@ -1,2 +1,4 @@
-# Code-Alpha-
-The intern projects
+# Image Gallery || CodeAlpha
+The intern Task 1
+<br>
+ 

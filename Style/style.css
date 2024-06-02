@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+input,button,i {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.search {
+    height: 40vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.search .content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.search h1 {
+    font-size: 2.65rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.search p {
+    font-size: 1.1rem;
+    margin-top: 8px;
+}
+
+.search .search_box {
+    height: 55px;
+    margin: 45px 20px;
+    position: relative;
+}
+
+.search_box i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8d8d8d;
+    font-size: 1.4rem;
+}
+
+.search_box input {
+    width: 100%;
+    height: 100%;
+    padding-left: 55px;
+    font-size: 1.1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery .images {
+    columns: 5 340px;
+    gap: 15px;
+    margin-top: 40px;
+    max-width: 95%;
+}
+
+.images .card {
+    margin-bottom: 14px;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.images .card .details {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -100px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    transition: .3s;
+}
+
+.images .card:hover .details {
+    bottom: 0;
+}
+
+.photographer {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.photographer i {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.card .details .photographer span {
+    font-size: 1.05rem;
+}
+
+.card .details button {
+    padding: 3px 8px;
+    font-size: 1.1rem;
+    background: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card .details button:hover {
+    background: #329ef7;
+    color: #fff;
+}
+
+.images img {
+    width: 100%;
+}
+
+.gallery .load_more_btn {
+    margin: 50px 0;
+    font-size: 1.2rem;
+    background: #329ef7;
+    padding: 12px 27px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.gallery .load_more_btn.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.gallery .load_more_btn:hover {
+    background: #2985e4;
+}
+
+
+.lightbox {
+    position: fixed;
+    z-index: 5;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.lightbox.show {
+    display: block;
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .photographer {
+    color: #333;
+}
+
+header .photographer i {
+    font-size: 1.7rem;
+}
+
+header .photographer span {
+    font-size: 1.2rem;
+}
+
+.lightbox .wrapper {
+    position: absolute;
+    width: 90%;
+    max-width: 850px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.preview_img  {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.wrapper .preview_img .img {
+    max-width: 90vh;
+    max-height: 65vh;
+}
+
+.preview_img .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+header .btns i {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-size: 1.2rem;
+    background: #329ef7;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btns i:last-child {
+    margin-left: 10px;
+    background: #ea1e1e;
+}
+
+.btns i:last-child:hover {
+    background: #8e0202;
+}
+
+
+header .btns i:hover {
+    background: #2985e4;
+}
